@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protech Academy Binjai</title>
+  <link rel="stylesheet" href="style.css"> <!-- Ganti ke CSS eksternal jika perlu -->
+
+  <style>
+    /* Reset dan dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #001f3f;
+      color: white;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('background.jpg') no-repeat center center/cover; /* Ganti dengan gambar hero yang sesuai */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 700px;
+    }
+
+    .overlay h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .overlay p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e65c00;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .overlay h1 {
+        font-size: 2rem;
+      }
+
+      .overlay p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="images (1).jpg" width="50" alt="Logo Protech">
+      <div class="logo-text">Protech Academy</div>
+    </div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="daftar.html">Daftar Kursus</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="overlay">
+      <h1>Selamat Datang di Protech Academy Binjai</h1>
+      <p>Kami menyediakan kursus teknologi & keterampilan digital untuk masa depan Anda.</p>
+      <a href="daftar.html" class="btn">Daftar Sekarang</a>
+    </div>
+  </main>
+
+</body>
+</html>
